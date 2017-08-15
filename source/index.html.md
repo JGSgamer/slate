@@ -2,23 +2,39 @@
 title: JGSplayz Docs
 
 toc_footers:
-  - <a href='#'>Sign Up for a Developer Key</a>
-  - <a href='https://github.com/tripit/slate'>Documentation Powered by Slate</a>
 
 language_tabs: # must be one of https://git.io/vQNgJ
 
 includes:
-  - errors
 
 search: true
 ---
 
 # Introduction
 
-Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.
-
-We have language bindings in Shell, Ruby, and Python! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
-
-This example API documentation page was created with [Slate](https://github.com/tripit/slate). Feel free to edit it and use it as a base for your own API's documentation.
+This guide will learn you how to install, update and manage your Minecraft server.
 
 # Authentication
+
+Start by visiting [GetBukkit](https://getbukkit.org/download/spigot) and downloading your desired version of Spigot.
+
+Next,  create a folder and place the downloaded file in it.
+
+After you did that, create a file named `start.bat` and paste in the following code:
+
+```basic
+java -Xms1G -Xmx1G -jar FileNameHere.jar
+PAUSE
+```
+
+<aside class="notice">
+
+* You must replace `FileNameHere.jar` with the name of the jar you downloaded from GetBukkit. 
+* You can change `-Xms1G` and `-Xmx1G` to the amount of ram you'd like to allocate.
+
+</aside>
+
+After that, save the file and make sure it is `start.bat` and **not** `start.bar.txt`, if that's correct you have to double click the `start.bat`. A couple files will be generated in the server folder, one of them being `eula.txt`. Open that file and change `eula=false` to `eula=true`.
+
+If you did that, you'll have to double click the `start.bat` file again and you should have a server up and running.
+
